@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-orange: hsl(22, 100%, 52%);
+  --hover-orange: hsla(22, 100%, 48%);
+  --secondary-orange: hsl(31, 84%, 51%);
+  --third-orange: hsl(22, 100%, 68%);
+  --dark-orange: hsl(29, 84%, 48%);
+  --error: hsl(0, 88%, 35%);
+  --cream: hsl(53, 71%, 91%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --light-cyan: hsl(180, 1%, 69%);
+  --gray: hsl(180, 1%, 23%);
+  --secondary-gray: hsl(0, 0%, 38%);
+  --third-gray: hsl(0, 0%, 54%);
+  --dark-blue: hsl(244, 100%, 14%);
+  --green: hsl(119, 50%, 34%);
+  --fs-regular: 1.2rem;
+  --fs-bold: 2rem;
+  --fs-bolder: 3rem;
+  --fs-logo: 1.5rem;
+  --fs-small: 0.8rem;
+  --fw-bold: 700;
+  --fw-bolder: 800;
+  --fw-regular: 400;
+}
+
+body {
+  background-color: var(--cream);
+}
+
+body,
+textarea {
+  font-family: "Inter", serif;
+}
+
+textarea {
+  resize: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: calc(100% - 197px);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h3 {
+  color: var(--primary-orange);
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.header-container {
+  max-width: 1200px;
+  padding: 10px 20px;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px auto;
+  margin-bottom: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: var(--fs-logo);
+  font-weight: var(--fw-bolder);
+  color: var(--primary-orange);
+}
+
+nav ul {
+  gap: 20px;
+}
+
+nav ul li a {
+  color: var(--secondary-gray);
+  transition: color 0.3s;
+}
+
+header .nav ul li a::after {
+  content: '';
+  display: block;
+  height: 3px;
+  margin-top: 2px;
+  background-color: var(--primary-orange);
+  transition: width 0.5s ease;
+  width: 0;
+}
+
+.active {
+  color: var(--primary-orange);
+}
+
+header .nav ul li a:hover::after {
+  width: 100%;
+}
+
+.list {
+  display: none;
+}
+
+footer .background img {
+  width: 100%;
+}
+
+footer .bg_footer {
+  background-color: var(--dark-blue);
+  margin-top: -8px;
+  color: var(--cream);
+}
+
+footer .bg_footer .footer-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer .bg_footer .footer-flex .logo {
+  gap: 10px;
+}
+
+footer .bg_footer .footer-flex .logo-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+footer .bg_footer .footer-flex .links ul li {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+
+footer .bg_footer .footer-flex .links ul li a {
+  color: var(--cream);
+}
+
+footer .bg_footer .footer-flex .links ul li a:hover {
+  color: var(--hover-orange);
+}
+
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.newsletter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-form .email {
+  gap: 10px;
+}
+
+.newsletter-form .email input {
+  height: 36px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  background-color: hsla(245, 17%, 46%, 0.553);
+  padding: 10px;
+  font-size: 1rem;
+  color: var(--cream);
+}
+
+.newsletter-form .email input:focus {
+  border-color: var(--primary-orange);
+  box-shadow: 0px 0px 10px var(--primary-orange);
+}
+
+.newsletter-section button {
+  width: 70px;
+  height: 35px;
+  border-radius: 18px;
+  background-color: var(--primary-orange);
+  border: none;
+  color: var(--cream);
+  cursor: pointer;
+}
+
+.newsletter-section button:hover {
+  color: var(--hover-orange);
+  background-color: var(--cream);
+}
+
+.newsletter-section .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.newsletter-section .social-icons a i {
+  font-size: var(--fs-regular);
+  color: var(--cream);
+}
+
+.newsletter-section .social-icons a i:hover {
+  color: var(--primary-orange);
+}
+
+.footer-divider {
+  margin: 60px auto;
+  width: 90%;
+}
+
+.footer-section {
+  padding-bottom: 30px;
+}
+
+.footer-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.footer-section ul li a {
+  color: var(--cream);
+}
+
+.footer-copyright {
+  text-align: center;
+  padding-top: 10px;
+}
+
+a.contact-item {
+  color: var(--cream);
+}
+
+a.contact-item:hover {
+  color: var(--primary-orange);
+}

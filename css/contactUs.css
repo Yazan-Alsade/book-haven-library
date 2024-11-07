@@ -1,0 +1,141 @@
+.bg-header {
+    background: var(--white);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+h1,
+h2,
+.icon,
+legend {
+    color: var(--primary-orange);
+}
+
+p {
+    color: var(--third-gray);
+}
+
+section p {
+    font-size: var(--fs-small);
+}
+
+.get-in-touch {
+    width: 45%;
+    align-self: self-start;
+}
+
+.contact-content p.contact {
+    margin: 1rem 0;
+}
+
+h1 {
+    font-size: var(--fs-bolder);
+}
+
+.bg-header p {
+    width: 55%;
+    margin: 1rem auto;
+}
+
+section {
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: var(--fs-bold);
+}
+
+.get-in-touch ul li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 0.8rem;
+}
+
+.icon {
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+strong {
+    font-size: 1rem;
+    color: var(--dark-blue);
+}
+
+section form {
+    padding: 1rem;
+    width: 28rem;
+    background: var(--white);
+    border-radius: 0.8rem;
+}
+
+legend {
+    font-size: var(--fs-regular);
+    font-weight: var(--fw-bold);
+    margin-bottom: 0.8rem;
+}
+
+.field {
+    margin-bottom: 0.8rem;
+    width: 100%;
+}
+
+.field input,
+textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid var(--third-gray);
+    width: 100%;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+.field input:focus,
+textarea:focus {
+    border: 1px solid var(--dark-orange);
+}
+
+hr {
+    border-top: 1px solid var(--dark-orange);
+}
+
+form>p:first-of-type {
+    margin: 0.8rem 0;
+}
+
+form p {
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+.btn button {
+    cursor: pointer;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid var(--dark-orange);
+    transition: all 0.3s ease-out;
+    background-color: var(--dark-orange);
+    color: var(--white);
+}
+
+.btn button:hover {
+    background: transparent;
+    color: var(--dark-orange);
+}
+
+.btn button:disabled {
+    opacity: 0.5
+}
+
+.error {
+    color: var(--error);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}

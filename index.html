@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is Book Haven final project at Gaza Sky Geeks" />
+  <meta name="Author" content="Yazan Alsade" />
+  <title>Book Library</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/home.css" />
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container row">
+      <div class="logo">
+        <img class="logo-icon" src="./images/logo.png" alt="logo" />
+        <div class="logo-text">BookHaven</div>
+      </div>
+      <nav class="nav">
+        <div class="list" id="list-id">
+          <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+        <ul id="nav-links" class="row">
+          <li>
+            <a href="/" class=" hover-opacity" aria-label="Go to Home page">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="hover-opacity" aria-label="Learn more About us">About</a>
+          </li>
+          <li>
+            <a href="#library-catalog" class="hover-opacity" aria-label="View Library catalog">Library catalog</a>
+          </li>
+          <li>
+            <a href="./pages/contactUs.html" class="hover-opacity" aria-label="Contact us for more information">Contact
+              us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="collection">
+      <div class="container">
+        <div class="row">
+          <div class="left-section">
+            <h2>The <span>BookHaven</span> eBook Library</h2>
+            <p>
+              Browse from the largest collection of ebooks Read stories from
+              anywhere, at anytime.
+            </p>
+            <button class="explore-btn">Explore Now</button>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="content swiper-slide">
+                  <img src="./images/book-1.png" alt="book1" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-2.png" alt="book2" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-3.png" alt="book3" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-4.png" alt="book4" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-5.png" alt="book5" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-6.png" alt="book6" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-7.png" alt="book7" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-8.png" alt="book8" />
+                </div>
+                <div class="content swiper-slide">
+                  <img src="./images/book-9.png" alt="book9" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="add-read-book">
+      <h4>We serve ebooks tools unveil your Imagination</h4>
+      <div class="add-read-book-info">
+        <div class="left-info">
+          <a href="./pages/addBook.html"><img src="./images/addBook.png" alt="add" /></a>
+          <h5>Add Book</h5>
+          <p>The contents of a book are its different chapters</p>
+        </div>
+        <div class="right-info">
+          <a href="./pages/readingBooks.html"><img src="./images/readBook.png" alt="add" /></a>
+          <h5>Reading Books</h5>
+          <p>The contents of a book are its different chapters</p>
+        </div>
+      </div>
+    </section>
+    <section class="are-reading_books">
+      <div class="are-reading-book">
+        <div class="container">
+          <div class="seeAll-book">
+            <h3>unread books</h3>
+            <a href="./pages/unReadingBooks.html" target="_blank">See All</a>
+          </div>
+          <div class="are-book-reading" id="to-read-list"></div>
+        </div>
+      </div>
+    </section>
+    <section id="library-catalog" class="about-our-library">
+      <div class="container">
+        <div class="our-library-info">
+          <div class="left-our-library">
+            <img src="./images/ReadingBook/ourLibrary.png" alt="our library" />
+          </div>
+          <div class="right-our-library">
+            <h3><span>Our</span> Libraries</h3>
+            <p>
+              Your reading list is a good place to start, but you will be
+              expected to read more widely too. use chyra to serach for
+              information on your topic, and to find books, journal articles
+              and other materials in the library
+            </p>
+            <a href="">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reading_books">
+      <div class="reading-book">
+        <div class="container">
+          <div class="seeAll-book">
+            <h3>reading books</h3>
+            <a href="./pages/readingBooks.html" target="_blank">See All</a>
+          </div>
+          <div class="book-reading" id="reading-list"></div>
+        </div>
+      </div>
+    </section>
+    <section class="community-section">
+      <div class="container">
+        <div class="stats-container">
+          <div class="stat-item">
+            <img src="./images/icon1.png" alt="ebooks" />
+            <div class="stat-item-info">
+              <span>13,456</span>
+              <span>eBooks</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <img src="./images/icon2.png" alt="audio" />
+
+            <div class="stat-item-info">
+              <span>50,456</span>
+              <span>Audio</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <img src="./images/icon3.png" alt="magazine" />
+
+            <div class="stat-item-info">
+              <span>21,456</span>
+              <span>Magazine</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <img src="./images/icon4.png" alt="videos" />
+            <div class="stat-item-info">
+              <span>19,456</span>
+              <span>Videos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="community-banner">
+        <div class="banner-content">
+          <h1>Join the Chyra Community</h1>
+          <p>
+            Learn more with people who share your common interest and give
+            your thoughts on the books you read. Sign up to join the
+            community.
+          </p>
+          <a href="#" class="cta-button">Join Our Community</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="donation-section">
+          <p>Support Our Library Donate Today</p>
+          <div class="donation-buttons">
+            <button class="donation-btn">$2000</button>
+            <button class="donation-btn">$1000</button>
+            <button class="donation-btn">$500</button>
+            <button class="donation-btn other-btn">Other</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="authors">
+      <div class="container">
+        <h3>Most Popular Authors</h3>
+        <div class="most-popular-authors">
+          <div class="authors-info">
+            <img src="./images/authors/author1.png" alt="caleb azumah author" />
+            <span>caleb azumah </span>
+          </div>
+          <div class="authors-info">
+            <img src="./images/authors/author2.png" alt="author" />
+            <span>Megan Nolan</span>
+          </div>
+          <div class="authors-info">
+            <img src="./images/authors/author3.png" alt="J. K. Rowling author" />
+            <span>J. K. Rowling</span>
+          </div>
+          <div class="authors-info">
+            <img src="./images/authors/author4.png" alt="John Grisham author" />
+            <span>John Grisham</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="start-reading">
+      <h2>Start Reading Now</h2>
+      <a href="#" class="signup-btn">Sign up Now</a>
+      <div class="book-row">
+        <img src="./images/book-1.png" alt="Book 1" />
+        <img src="./images/book-2.png" alt="Book 2" />
+        <img src="./images/book-3.png" alt="Book 3" />
+        <img src="./images/book-4.png" alt="Book 4" />
+        <img src="./images/book-5.png" alt="Book 5" />
+        <img src="./images/ReadingBook/read1.png" alt="Book 6" />
+        <img src="./images/ReadingBook/read2.png" alt="Book 7" />
+        <img src="./images/ReadingBook/read3.png" alt="Book 8" />
+        <img src="./images/ReadingBook/read4.png" alt="Book 9" />
+      </div>
+    </section>
+    <section id="about" class="about-us">
+      <div class="container">
+        <div class="about-us-info">
+          <div class="about-left">
+            <img src="./images/library.png" alt="book heaven library" />
+          </div>
+          <div class="about-right">
+            <h5>About Us</h5>
+            <span>About Our Company</span>
+            <p>
+              Our goal is to bring together people under one atmosphere to
+              share their knowledge, their passion for books and provide the
+              space for people with same interest, same common value to relate
+              with one another, The Chyra Library provide that space for every
+              individual.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="background">
+      <img src="./images/wave.svg" alt="background desktop footer" class="bg_desktop" />
+    </div>
+    <div class="bg_footer">
+      <div class="footer-flex">
+        <div class="logo-contact">
+          <div class="logo">
+            <img class="footer-icon" src="./images/logo.png" alt="logo" width="50px" height="50px" />
+            <div class="logo-text">BookHaven</div>
+          </div>
+          <div class="contact">
+            <p class="contact-item">
+              <i class="fa-solid fa-phone"></i>&nbsp; +1-543-123-4567
+            </p>
+            <a class="contact-item" href="mailto:example@example.com">
+              <i class="fa-solid fa-envelope"></i>&nbsp; example@example.com
+            </a>
+          </div>
+        </div>
+
+        <div class="links">
+          <ul class="links-list">
+            <li class="link-item"><a href="#" class="link">About Us</a></li>
+            <li class="link-item"><a href="#" class="link">Products</a></li>
+            <li class="link-item"><a href="#" class="link">Offers</a></li>
+            <li class="link-item"><a href="#" class="link">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="newsletter-section">
+          <div class="newsletter-content">
+            <p class="newsletter-title">Newsletter</p>
+            <form class="newsletter-form">
+              <div class="email">
+                <input type="email" name="subscribe" aria-label="Email Address" class="email-input" />
+                <button class="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="footer-divider" />
+      <div class="footer-section">
+        <ul class="footer-links">
+          <li><a href="/" class="footer-link">Terms of use</a></li>
+          <li><a href="/" class="footer-link">Privacy Policy</a></li>
+          <li><a href="/" class="footer-link">Cookie Policy</a></li>
+        </ul>
+
+        <p class="footer-copyright">&copy; 2022 BookHaven Library</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="reading-loading-spinner" class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+  <div id="reading-list"></div>
+
+  <div id="unread-loading-spinner" class="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+  <div id="to-read-list"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/swiperScript.js"></script>
+  <script src="./js/showData.js" type="module"></script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

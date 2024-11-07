@@ -1,0 +1,7 @@
+#json library
+node_modules
+package-lock.json
+package.json
+
+#data
+db.json

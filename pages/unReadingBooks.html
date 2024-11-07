@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Display reading books" />
+    <meta name="author" content="Razan ibraheem" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/booksList.css" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png" />
+
+    <title>Unread</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container row">
+            <div class="logo">
+                <img class="logo-icon" src="../images/logo.png" alt="logo" />
+                <div class="logo-text">BookHaven</div>
+            </div>
+            <nav class="nav">
+                <div class="list" id="list-id">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </div>
+                <ul id="nav-links" class="row">
+                    <li><a href="../" class="hover-opacity" aria-label="Go to Home page">Home</a></li>
+                    <li><a href="../" class="hover-opacity" aria-label="Learn more About us">About</a></li>
+                    <li><a href="../" class="hover-opacity" aria-label="View Library catalog">Library
+                            catalog</a></li>
+                    <li><a href="./contactUs.html" class="hover-opacity"
+                            aria-label="Contact us for more information">Contact us</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero-section row">
+                <div class="hero-content">
+                    <h4>Let's make the best investments</h4>
+                    <h1>
+                        The <span class="highlight">B.H</span><br />
+                        eBook Library
+                    </h1>
+                    <p>
+                        Browse from the largest collection of ebooks.<br />Read stories from
+                        anywhere, at anytime.
+                    </p>
+                    <div class="search-bar">
+                        <input type="text" id="searchInput" class="search-input"
+                            placeholder="Search by book title, author name" />
+                        <button class="search-button" id="searchButton">Search</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img class="desktop-image" src="../images/read.jpg" alt="Person reading a book" />
+                </div>
+            </section>
+            <div class="title-container">
+                <h2 class="library-title">Unread Books</h2>
+            </div>
+            <div class="book-grid" id="books_wrapper">
+                <div id="loadingMessage" style="display: none;">Loading...</div>
+            </div>
+        </div>
+
+    </main>
+    <footer class="footer">
+        <div class="background">
+            <img src="../images/wave.svg" alt="background desktop footer" class="bg_desktop" />
+        </div>
+        <div class="bg_footer">
+            <div class="footer-flex">
+                <div class="logo-contact">
+                    <div class="logo">
+                        <img class="footer-icon" src="../images/logo.png" alt="logo" width="50px" height="50px" />
+                        <div class="logo-text">BookHaven</div>
+                    </div>
+                    <div class="contact">
+                        <p class="contact-item">
+                            <i class="fa-solid fa-phone"></i>&nbsp; +1-543-123-4567
+                        </p>
+                        <a class="contact-item" href="mailto:example@example.com">
+                            <i class="fa-solid fa-envelope"></i>&nbsp; example@example.com
+                        </a>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <ul class="links-list">
+                        <li class="link-item"><a href="#" class="link">About Us</a></li>
+                        <li class="link-item"><a href="#" class="link">Products</a></li>
+                        <li class="link-item"><a href="#" class="link">Offers</a></li>
+                        <li class="link-item"><a href="#" class="link">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="newsletter-section">
+                    <div class="newsletter-content">
+                        <p class="newsletter-title">Newsletter</p>
+                        <form class="newsletter-form">
+                            <div class="email">
+                                <input type="email" name="subscribe" aria-label="Email Address" class="email-input" />
+                                <button class="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook" class="social-link"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter" class="social-link"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram" class="social-link"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="footer-divider" />
+            <div class="footer-section">
+                <ul class="footer-links">
+                    <li><a href="/" class="footer-link">Terms of use</a></li>
+                    <li><a href="/" class="footer-link">Privacy Policy</a></li>
+                    <li><a href="/" class="footer-link">Cookie Policy</a></li>
+                </ul>
+
+                <p class="footer-copyright">&copy; 2022 BookHaven Library</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+    <script type="module" src="../js/unReadBookList.js"></script>
+</body>
+
+</html>
